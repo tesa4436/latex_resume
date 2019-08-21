@@ -1,0 +1,84 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textheight}{9.5in} % increase text height to fit on 1-page 
+
+\begin{document} 
+
+\name{Teodoras Šaulys\\[12pt]}     % the \\[12pt] adds a blank
+				        % line after name      
+
+\address{\texttt{github.com/tesa4436}}
+                                  
+\begin{resume}
+
+\section{CONTACT INFORMATION}          
+\begin{itemize}
+	\item Email 1:			\texttt{hello@world.com}
+	\item Email 2:			\texttt{lorem@ipsum.org}
+	\item Phone number:		1337696969
+	\item Code repositories:	\texttt{github.com/tesa4436}
+\end{itemize}
+
+
+\section{EDUCATION}          
+
+\begin{itemize}
+    \item Vilnius University, Faculty of Mathematics and Informatics\\        
+    Bachelor of Software Engineering, 2017-2021 (ongoing)      
+\end{itemize}
+ 
+\section{EXPERIENCE AND PERSONAL PROJECTS}
+   \vspace{-0.1in}	
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.97in}\= \kill % set up two tab positions
+    \textbf{tdwm} (TeD's Window Manager), a window manager for the X Window System\\
+    \texttt{github.com/tesa4436/tdwm}\>     \>Language: C\\
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+   Unlike traditional window managers in Unix systems, \textbf{tdwm} places windows in a tiling layout,
+   utilising the binary tree data structure. The screen real estate is completely covered in windows at
+   all times, which enhances productivity and reduces clutter on the screen. The code is C99 compliant.
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{1.9in}\= \kill % set up two tab positions
+    \bf Intel 8086 Disassembler\\
+    \texttt{github.com/tesa4436/disasm} \> \>Language: Intel 8086 assembly\\
+   \end{tabbing}\vspace{-20pt}
+   This program disassembles Intel 8086 machine code into assembly language mnemonics.
+   The code is printed to the standard output.
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.97in}\= \kill % set up two tab positions          
+   \textbf{Tic-Tac-Toe}\\
+   \texttt{github.com/tesa4436/tictactoe}\>\>Language: C\\
+   \end{tabbing}\vspace{-20pt}
+   A classic tic-tac-toe game in the server/client model, using Internet domain BSD sockets. 
+   Features a custom protocol to facilitate the communication between the server and the client.
+
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.8in}\= \kill % set up two tab positions          
+   \textbf{PacMan}\\
+   \texttt{github.com/tesa4436/pacman}\>\>Language: Java\\
+   \end{tabbing}\vspace{-20pt}
+   This is a PacMan game featuring random level generation (modified depth-first search) and
+   E. Dijkstra's pathfinding algorithm with a minor alteration.
+
+\section{SKILLS}          
+\begin{itemize}
+	\item Languages: C, C\#, Java, C++, SQL
+	\item \LaTeX{} document typesetting
+	\item Git, Vim, shell scripting, GNU debugger
+	\item Linux system administration
+\end{itemize}
+
+\section{HOBBIES}
+\begin{itemize}
+	\item Cycling 	
+	\item Hiking, mountain climbing
+	\item Cross-country skiing 	
+	\item Photography
+\end{itemize}
+
+\end{resume}
+\end{document}
